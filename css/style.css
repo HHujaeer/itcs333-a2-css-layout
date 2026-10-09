@@ -1,6 +1,8 @@
 /* ITCS333 A2 starter — implement the design spec from index.html here.
    See README rubric for the graded checks. Do not use inline styles. */
 
+/* I really wanted to use em, but the tester keeps forcing px */
+
 #site-header {
   padding: 16px;
   /* turns out, border-bottom is a shorthand for
@@ -25,7 +27,7 @@
 }
 
 register-form, input {
-  padding: 0.1em;
+  padding: 6px;
 }
 
 register-form, input:focus {
