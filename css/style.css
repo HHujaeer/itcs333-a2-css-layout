@@ -3,16 +3,34 @@
 
 /* I really wanted to use em, but the tester keeps forcing px */
 
+:root {
+  --bg: #0d1220;
+  --text: #e9eefb;
+  --border: #1d4ed8;
+  --form-border: #3b82f6;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+}
+
 #site-header {
   padding: 16px;
-  /* turns out, border-bottom is a shorthand for
-   * border-bottom-{color/style/width}, so tester rejected border-bottom-style
-   */
   border-bottom: 0.2em dashed;
 }
 
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
 .card {
-  border: solid;
+  border: solid var(--border);
   padding: 12px;
   /* this does nothing, gap is only for
    * flex, grid, and multi-column
@@ -26,12 +44,39 @@
   gap: 16px;
 }
 
+.register-form {
+  display: grid;
+  gap: 0.8rem;
+}
+
 .register-form input {
+  background-color: #CBCBCB;
+  width: max(20%, 150px);
   padding: 6px;
 }
 
+.btn-primary {
+  width: max(20%, 125px);
+  height: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .register-form input:focus {
-  border-color: blue;
+  border-color: var(--form-border);
+}
+
+.main-nav {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #60a5fa;
+}
+
+.site-footer {
+  font-size: 1.2rem;
+  border-top: red;
 }
 
 
