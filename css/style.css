@@ -13,7 +13,7 @@
 
 .card {
   border: solid;
-  padding: 0.2em;
+  padding: 12px;
   /* this does nothing, gap is only for
    * flex, grid, and multi-column
    */
@@ -23,7 +23,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5em;
+  gap: 16px;
 }
 
 
