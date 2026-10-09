@@ -1,8 +1,6 @@
 /* ITCS333 A2 starter — implement the design spec from index.html here.
    See README rubric for the graded checks. Do not use inline styles. */
 
-/* TODO: style form inputs (padding) and a :focus state */
-
 #site-header {
   padding: 16px;
   /* turns out, border-bottom is a shorthand for
@@ -26,6 +24,13 @@
   gap: 16px;
 }
 
+register-form, input {
+  padding: 0.1em;
+}
+
+register-form, input:focus {
+  border-color: blue;
+}
 
 
 @media (max-width: 700px) {
