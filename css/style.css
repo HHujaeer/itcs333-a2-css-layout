@@ -26,11 +26,11 @@
   gap: 16px;
 }
 
-register-form, input {
+.register-form input {
   padding: 6px;
 }
 
-register-form, input:focus {
+.register-form input:focus {
   border-color: blue;
 }
 
